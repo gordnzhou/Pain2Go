@@ -7,6 +7,7 @@
     <title>Pain2Go</title>
     <link rel="stylesheet" type="text/css" href="../../css/universal.css">
     <link rel="stylesheet" type="text/css" href="../../css/exercises.css">
+    <script src="show.js"></script>
 </head>
     <body>
         <!--Top Nav Bar-->
@@ -32,8 +33,20 @@
         <!-- Sideways navbar -->
         <!-- <navbar>
             <ul class="desktop_navbar" id="navbar">
-                <li class="navbar_li navbar_title"><a class="nav_text current_nav_page" href="">PAIN2GO</a></li>
+                <li class="navbar_li"><a class="nav_text"><img class="navbar_logo" src="images/logo.png"
+                            alt="Pain2Go Logo" /></a></li>
     
+                <div class="navbar_li_mid">
+                    <li class="navbar_li"><a class="nav_text" href="pages/exercises.html">
+                        EXERCISES <i class="fa-solid fa-dumbbell"></i>
+                    </a></li>
+                    <li class="navbar_li"><a class="nav_text" href="pages/contact.html">
+                        CONTACT US <i class="fa-solid fa-envelope"></i>
+                    </a></li>
+                    <li class="navbar_li"><a class="nav_text" href="pages/about-us.html">
+                        ABOUT US <i class="fa-solid fa-user-group"></i>
+                    </a></li>
+                </div>
                 <li class="navbar_li navbar_li_right"><a class="nav_text" href="pages/hip-hard">Hard</a></li>
                 <li class="navbar_li navbar_li_right"><a class="nav_text" href="index.html">Medium</a></li>
                 <li class="navbar_li navbar_li_right"><a class="nav_text" href="index.html">Easy</a></li>
@@ -41,7 +54,19 @@
         </navbar> -->
         
         <!--Title-->
-        <h3>Exercise 1 (Beginner)</h3>
+        <div id="title">
+            <h3>Exercise 1 (Beginner)</h3>
+            <div id="hidden-div" class="hidden">
+                <p id="countdown"></p>
+                <script src="timer.js"></script>
+                <script>
+                    // creating a function that returns the location of the next page 
+                    function nextPage() {
+                        return 'html-hard.html';
+                    }
+                </script>
+            </div>
+        </div>
         <!--video links-->
         <div id="video-container">
             <iframe width="550" height="250" src="https://www.youtube.com/embed/rHHzHSmjLng" title="lunge stretch" frameborder="0" 
@@ -65,6 +90,9 @@
         </div>
         <div id="button">
             <a href="hip-easy.html" class="previous">&#8249;</a>
+            <button id="timer" onclick="showTimer()">
+                <img src="play-button.svg">
+            </button>
             <a href="html-hard.html" class ="next">&#8250;</a>
         </div>
     </body>

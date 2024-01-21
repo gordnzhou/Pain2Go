@@ -1,4 +1,3 @@
-<!--main default-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,7 @@
     <title>Pain2Go</title>
     <link rel="stylesheet" type="text/css" href="../../css/universal.css">
     <link rel="stylesheet" type="text/css" href="hip-easy.css">
-    <script src="timer.js"></script>
+    <script src="show.js"></script>
 </head>
     <body>
         <!--Top Nav Bar-->
@@ -24,7 +23,14 @@
         <div id="title">
             <h3>Exercise 1 (Beginner)</h3>
             <div id="hidden-div" class="hidden">
-                <p>test</p>
+                <p id="countdown"></p>
+                <script src="timer.js"></script>
+                <script>
+                    // creating a function that returns the location of the next page 
+                    function nextPage() {
+                        return 'html-hard.html';
+                    }
+                </script>
             </div>
         </div>
         <!--video links-->
@@ -50,7 +56,7 @@
         </div>
         <div id="button">
             <a href="hip-easy.html" class="previous">&#8249;</a>
-            <button id="timer">
+            <button id="timer" onclick="showTimer()">
                 <img src="play-button.svg">
             </button>
             <a href="html-hard.html" class ="next">&#8250;</a>
