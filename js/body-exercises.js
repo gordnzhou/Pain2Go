@@ -1,4 +1,6 @@
 let MIN_WAIT_TIME = 5000;
+let SCORE_KEY = "verycoolscore";
+
 let canClick = false;
 
 setTimeout(() => {canClick = true;}, MIN_WAIT_TIME);
@@ -48,8 +50,10 @@ function nextLevel() {
 }
 
 function addScore(amountToAdd) {
-    let keyName = "verycoolscore";
+    let score = localStorage.getItem(SCORE_KEY);
+    let newScore = Number(score) + Number(amountToAdd);
+    localStorage.setItem(SCORE_KEY, newScore);
 
-    let score = localStorage.getItem(keyName);
-    localStorage.setItem(keyName, Number(score) + Number(amountToAdd));
+    const updateElement = document.getElementById('score_display');
+    updateElement.textContent = `SCORE: ${newScore}`;
 }

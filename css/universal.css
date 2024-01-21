@@ -69,5 +69,5 @@ body {
 .navbar_li_mid {
     display: flex;
     justify-content: space-around;
-    margin-right: 140px;
+    margin-right: 10px;
 }

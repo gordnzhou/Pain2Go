@@ -28,6 +28,7 @@
                     <li class="navbar_li"><a class="nav_text" href="../about-us.html">
                         ABOUT US <i class="fa-solid fa-user-group"></i>
                     </a></li>
+                    <li class="navbar_li"><p id="score_display" class="nav_text">SCORE: </p></li>
                 </div>
             </ul>  
         </navbar>
@@ -61,7 +62,7 @@
                 <!--video links-->
                 <div id="video-container">
                     <iframe width="1470" height="634" 
-                    src="https://www.youtube.com/embed/Xp33YgPZgns" title="Best Hip Exercise - The Glute Bridge" 
+                    src="https://www.youtube.com/embed/Xp33YgPZgns?autoplay=1" title="Best Hip Exercise - The Glute Bridge" 
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowfullscreen>
                     </iframe>
@@ -172,10 +173,13 @@
                 </button>
             </div> -->
 
-            <button class="nextButton" onclick="tryNextLevel()">
-                Next Exercise!
-            </button>
+            <div id="nextButtonContainer">
+                <button class="nextButton" onclick="tryNextLevel()">
+                    Next Exercise!
+                </button>
+            </div>
         </div>
         <script src="../../js/body-exercises.js"></script>
+        <script src="../../js/universal.js"></script>
     </body>
 </html>
