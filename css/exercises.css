@@ -1,13 +1,18 @@
 .exercise-index-container {
+    margin-top: 130px;
     display: flex;
     flex-direction: column;
     align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 225px;
 }
 
 .painQuestion {
     align-self: center;
-    font-size:20px;
     color: #b8dee3;
+    text-decoration: underline;
 }
 
 .choice-div {
@@ -29,10 +34,27 @@
 .labelExercise {
     text-align: right;
     clear: both;
-    font-size: larger;
+    font-size: 25px;
 }
 
 .nextButton {
-    max-width: 80px;
-    align-self: center;
+    text-align: center;
+    width: fit-content;
+    padding: 10px 16px;
+    border-radius: 12px;
+    margin: 20px 15px;
+    font-size: 18px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    background-color: #FFFFF2;
+    color:  #555555;
+    user-select: none;
 }
+    
+.nextButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 8px 15px;
+    transform: translateY(-1px);
+}
+
+
+
