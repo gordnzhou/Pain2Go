@@ -1,4 +1,23 @@
 .exercise-index-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+}
+
+.painQuestion {
+    align-self: center;
+    color: #b8dee3;
+}
+
+.pain-form {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: #b8dee3;
+}
+
+.nextButton {
+    max-width: 80px;
+    align-self: center;
 }

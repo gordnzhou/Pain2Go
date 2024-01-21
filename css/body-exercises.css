@@ -47,11 +47,6 @@ body {
     padding: 20px 30px;
 }
 
-/* Additional styling for the logo */
-.exercise-nav-container .navbar_logo {
-    max-width: 100%;
-    height: auto;
-}
 
 .main-container {
     flex-grow: 1; 
@@ -68,12 +63,19 @@ h1 {
     display: none;
 }
 
-#countdown {
-    background-color: #D7D6F6;
-    width: 100px;
+/* Additional styling for the logo */
+.exercise-nav-container .navbar_logo {
+    max-width: 100%;
+    height: auto;
 }
 
-/* video layout */
+.main-container {
+    flex-grow: 1; 
+    padding: 20px; 
+}
+
+/*video layout*/
+
 #video-container {
     display: flex;
     justify-content: center;
