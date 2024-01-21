@@ -1,15 +1,19 @@
+body {
+    margin: 0;
+}
 
 .desktop_navbar {
     position: fixed;
     top: 0px;
     width: 100%;
     height: 50px;
-    background: #818DFC;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-bottom: 50px;
     z-index: 99;
-    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    background: black;
+    opacity: 60%;
 }
 
 .navbar_li {
@@ -22,24 +26,25 @@
     font-size: 1.5em;
     text-decoration: none;
     display: inline;
-    margin: 0px 10px;
+    margin: 0;
     line-height: 50px;
-    padding-right: 35px;
+    padding: 0 35px;
     transition: 0.3s;
 }
 
 .nav_text:hover {
-    color: #85B79D;
+    color: #B9FFDB;
 }
 
 .current_nav_page {
-    color: #B9FFDB;
+    color: #85B79D;
 }
 
 .navbar_logo {
     float: right;
-    width: 50px;
+    width: 80px;
     height: auto;
+    margin: auto;
     top: 5px;
     position: relative;
     top: 12px;
