@@ -13,6 +13,11 @@ h3 {
     display: none;
 }
 
+#countdown {
+    background-color: #D7D6F6;
+    width: 100px;
+}
+
 #video-container {
     align-self: center;
 }
