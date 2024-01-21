@@ -149,3 +149,17 @@ h2 {
 .nested-div {
     margin-bottom: 10px;
 }
+
+.nextButton {
+    text-align: center;
+    width: fit-content;
+    padding: 10px 16px;
+    border-radius: 12px;
+    margin: 20px 15px;
+    font-size: 30px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    background-color: #FFFFF2;
+    color:  #555555;
+    user-select: none;
+}

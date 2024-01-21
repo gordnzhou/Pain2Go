@@ -16,6 +16,7 @@
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px; 
+    position: relative;
 }
 
 .bio-container .text-container {
@@ -27,21 +28,37 @@
     text-decoration: underline;
 }
 
-.linkedin .fa-brands .fa-linkedin {
-    width: 1000px;
-    height: auto;
-    display: block;
-    margin: 0 auto; 
-    text-decoration: none;
-}
-
 .team-bios {
     display: flex;
     justify-content: center;
     margin-top: 5em;
 }
 
+.linkedin .fa-brands .fa-linkedin {
+        width: 1000px;
+        height: auto;
+        display: block;
+        margin: 0 auto; 
+        text-decoration: none;
+        display: center;
+        justify-content: center;
+}
+
 .main-header{
     padding-top: 100px;
+}
+
+.linkedin {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: #03b6fc;
+    display: block;
+    height: auto;
+}
+
+.linkedin:visited {
+    color: #03b6fc; /* Same color as the normal state */
 }
 
