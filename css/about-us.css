@@ -1,5 +1,5 @@
 html {
-    height: 100%; /* This ensures that the html element is at least the full height of the viewport */
+    height: 100%;
 }
 
 body {
@@ -21,16 +21,20 @@ body {
 
 @media (min-width: 1000px) {
     body {
-        background-size: 150vh; /* Use contain for larger screens */
+        background-size: 150vh;
     }
 }
 
 .about-container {
+    position: fixed;
     bottom: 0;
-    color: white; /* Adjust the alpha (fourth parameter) for background color transparency */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
     padding: 20px;
-    margin: 1000px auto;
-    max-width: 800px; /* Adjust the maximum width as needed */
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
 }
 
 .about-container h1 {
