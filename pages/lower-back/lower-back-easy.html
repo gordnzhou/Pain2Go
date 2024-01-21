@@ -19,15 +19,16 @@
                 </a></li>
     
                 <div class="navbar_li_mid">
-                    <li class="navbar_li"><a class="nav_text" href="../contact.html">
-                        CONTACT US <i class="fa-solid fa-envelope"></i>
+                    <li class="navbar_li"><a class="nav_text" href="../about-us.html">
+                        ABOUT US <i class="fa-solid fa-user-group"></i>
                     </a></li>
                     <li class="navbar_li"><a class="nav_text" href="../exercises.html">
                         EXERCISES <i class="fa-solid fa-dumbbell"></i>
                     </a></li>
-                    <li class="navbar_li"><a class="nav_text" href="../about-us.html">
-                        ABOUT US <i class="fa-solid fa-user-group"></i>
+                    <li class="navbar_li"><a class="nav_text" href="../contact.html">
+                        CONTACT US <i class="fa-solid fa-envelope"></i>
                     </a></li>
+                    <li class="navbar_li"><p id="score_display" class="nav_text">SCORE: </p></li>
                 </div>
             </ul>  
         </navbar>
@@ -73,11 +74,6 @@
                         </li>
                     </ul>
                 </div>
-                <div id="exercise-button">
-                    <button id="../../js/timer" onclick="showTimer()">
-                        <img src="../../images/play-button.svg">
-                    </button>
-                </div>
             </div>
     
             <div id="midDiv" class="level-div">
@@ -107,11 +103,6 @@
                             Repetitions: 10 reps each side.
                         </li>
                     </ul>
-                </div>
-                <div id="exercise-button">
-                    <button id="../../js/timer" onclick="showTimer()">
-                        <img src="../../images/play-button.svg">
-                    </button>
                 </div>
             </div>
     
@@ -144,13 +135,15 @@
                         </li>
                     </ul>
                 </div>
-                <div id="exercise-button">
-                    <button id="../../js/timer" onclick="showTimer()">
-                        <img src="../../images/play-button.svg">
-                    </button>
-                </div>
+            </div>
+
+            <div id="nextButtonContainer">
+                <button class="nextButton" onclick="tryNextLevel()">
+                    Next Exercise!
+                </button>
             </div>
         </div>
         <script src="../../js/body-exercises.js"></script>
+        <script src="../../js/universal.js"></script>
     </body>
 </html>

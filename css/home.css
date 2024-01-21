@@ -7,9 +7,7 @@
     transform: translate(-50%, -50%);
     background-color: #F2F2F2;
     border-radius: 50%;
-    margin-top: 75px;
-
-    
+    margin-top: 130px;
 }
 .humanBody {
     display: flex;
