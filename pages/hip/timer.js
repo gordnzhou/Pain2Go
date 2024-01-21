@@ -20,7 +20,3 @@ function updateCountdown() {
     }
 
 }
-
-function switchTab(tabContent) {
-    
-}
