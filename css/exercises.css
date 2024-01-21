@@ -1,3 +1,14 @@
+.exercise_navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #818DFC;
+}
+
+
+
+
 body {
     background-color: #F2F2F2;
     display: flex;
@@ -45,4 +56,13 @@ a {
 a:hover {
     background-color: #ddd;
     color: black;
+}
+
+/*different divs*/
+#hipMid {
+    display: none;
+}
+
+#hipHard {
+    display: none;
 }
