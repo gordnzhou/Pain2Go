@@ -1,3 +1,13 @@
+.circle {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E9FCEB;
+    border-radius: 50%;
+}
 .humanBody {
     display: flex;
     position: absolute;
@@ -8,7 +18,6 @@
     transform: translate(-50%, -50%);
     align-items: center;
     justify-content: center;
-    border: 5px solid black;
 }
 
 #humanBodyFront {
@@ -48,9 +57,9 @@
 #kneesF {
     opacity: 1;
     position: absolute;
-    top: 300px;
-    left: 103px;
-    width: 100px;
+    top: 302px;
+    left: 104px;
+    width: 97px;
 }
 
 #neckB {
@@ -72,9 +81,9 @@
 #hipB {
     opacity: 1;
     position: absolute;
-    top: 196px;
-    left: 288px;
-    width: 126px;
+    top: 200px;
+    left: 291px;
+    width: 120px;
 }
 
 #kneesB {
