@@ -1,4 +1,4 @@
-var bodyPartIds = ["neck"];
+var bodyPartIds = ["neckF","deltsF","hipF","kneesF","neckB","lowerBack","hipB","kneesB"];
 
 bodyPartIds.forEach((partId) => {
     var bodyPart = document.getElementById(partId);
