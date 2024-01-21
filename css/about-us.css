@@ -17,6 +17,7 @@ body {
     background-attachment: fixed;
     background-size: 200%;
     background-color: black !important; 
+    overflow: hidden; /*removed scrool since we just have a few paragraphs of text*/
 }
 
 @media (min-width: 1000px) {
