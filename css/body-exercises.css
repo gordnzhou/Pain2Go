@@ -42,21 +42,17 @@ nav a {
     padding: 20px 30px;
 }
 
+/*popup timer*/
+#hidden-timer {
+    display: none;
+}
+
 
 /*title and hidden timer*/
 
 h3 {
     padding-top: 70px;
     text-align: center;
-}
-
-#hidden-div {
-    display: none;
-}
-
-#countdown {
-    background-color: #D7D6F6;
-    width: 100px;
 }
 
 /*video layout*/

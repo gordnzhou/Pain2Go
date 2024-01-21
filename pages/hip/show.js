@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const showTimer = document.getElementById('timer');
-    const hiddenTimer = document.getElementById('hidden-div');
+    const hiddenTimer = document.getElementById('hidden-timer');
   
     showTimer.addEventListener('click', function() {
       if(hiddenTimer.style.display='none'){
@@ -10,3 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 });
+
+function openTimer() {
+  document.getElementById('')
+}
+
+function closeTimer() {
+
+}

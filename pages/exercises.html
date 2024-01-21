@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Exercise List</title>
     <link rel="stylesheet" type="text/css" href="../css/exercises.css">
     <link rel="stylesheet" type="text/css" href="../css/universal.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
@@ -30,26 +30,51 @@
         </ul>  
     </navbar>
 
-    <h1 class="main-header">Exercises Index</h1>
+    <h1 class="main-header"></h1>
     
     <div class="exercise-index-container">
-        <ul class="index-ul">
-            <li class="index-li"><a class="index-text" href="hip/hip-easy.html">
-                HIPS
-            </a></li>
-            <li class="index-li"><a class="index-text" href="knee/knee-easy.html">
-                KNEE
-            </a></li>
-            <li class="index-li"><a class="index-text" href="lower-back/lower-back-easy.html">
-                LOWER-BACK
-            </a></li>
-            <li class="index-li"><a class="index-text" href="neck/neck-easy.html">
-                NECK
-            </a></li>
-            <li class="index-li"><a class="index-text" href="shoulder/shoulder-easy.html">
-                SHOULDER
-            </a></li>
-        </ul>
+        <p class="painQuestion"> Where do you feel pain?</p>
+        <form class="pain-form">
+            <!--hip choice-->
+            <input type="radio" id="hipChoice" name="exercise" value="hip"/>
+            <label for="hipChoice">Hips</label>
+            <!--knee choice-->
+            <input type="radio" id="kneeChoice" name="exercise" value="knee"/>
+            <label for="kneeChoice">Knee</label>
+            <!--lower-back choice-->
+            <input type="radio" id="lower-backChoice" name="exercise" value="lower-back"/>
+            <label for="lower-backChoice">Lower back</label>
+            <!--neck choice-->
+            <input type="radio" id="neckChoice" name="exercise" value="neck"/>
+            <label for="neckChoice">Neck</label>
+            <!--shoulder choice-->
+            <input type="radio" id="shoulder" name="exercise" value="shoulder"/>
+            <label for="shoulderChoice">Shoulder</label>
+        </form>
+
+        <button class="nextButton" onclick="getNext()">
+            Next
+        </button>
+
+        <script>
+            function getNext() {
+                var selected = document.querySelector('input[name="exercise"]:checked');
+                
+                if (selected.value == 'hip') {
+                    window.location.href = "hip\\hip-easy.html";
+                } else if (selected.value == 'knee') {
+                    window.location.href = "knee\\knee-easy.html";
+                } else if (selected.value == 'lower-back') {
+                    window.location.href = "lower-back\\lower-back-easy.html";
+                } else if (selected.value == 'neck') {
+                    window.location.href = "neck\\neck-easy.html";
+                } else if (selected.value == 'shoulder') {
+                    window.location.href = "shoulder\\shoulder-easy.html";
+                } else {
+                    // do nothing
+                }
+            }
+        </script>
     </div>
 </body>
 </html>
