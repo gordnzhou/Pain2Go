@@ -1,0 +1,42 @@
+.bio-img {
+    width: 200px;
+    height: auto;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    display: block; 
+    margin: 0 auto;
+}
+
+.bio-container {
+    background-color: rgb(43, 43, 43);
+    margin: 5px;
+    color: white;
+    padding: 50px 0 30px 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px; 
+}
+
+.bio-container .text-container {
+    color: white;
+    margin: 5px 10px 5px 10px;
+}
+
+.bio-container .text-container h3 {
+    text-decoration: underline;
+}
+
+.linkedin .fa-brands .fa-linkedin {
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    text-decoration: none
+}
+
+.team-bios {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
