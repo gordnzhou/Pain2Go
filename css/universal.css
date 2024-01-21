@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    background-color: #818DFC;
+    font-family: 'Inter';
 }
 
 .desktop_navbar {
@@ -11,9 +13,8 @@ body {
     margin: 0;
     padding: 0;
     padding-bottom: 50px;
-    z-index: 99;
-    background: black;
-    opacity: 60%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .navbar_li {
@@ -23,13 +24,14 @@ body {
 
 .nav_text {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-decoration: none;
-    display: inline;
-    margin: 0;
+    display: inline-block;
+    margin: auto;
     line-height: 50px;
-    padding: 0 35px;
+    padding: 25px 35px;
     transition: 0.3s;
+    font-weight: 100;
 }
 
 .nav_text:hover {
@@ -46,8 +48,9 @@ body {
     height: auto;
     margin: auto;
     top: 5px;
+    display: inline;
     position: relative;
-    top: 12px;
+    top: -15px;
     margin-right: 10px;
 }
 
@@ -56,6 +59,8 @@ body {
     position: relative;
 }
 
-.navbar_li_right {
-    float: right;
+.navbar_li_mid {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 140px;
 }
