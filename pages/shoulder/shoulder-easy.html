@@ -10,6 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/841ed0000c.js" crossorigin="anonymous"></script>
     <script src="../../js/show.js"></script>
+    <script src="../../js/speechToText.js"></script>
 </head>
     <body>
         <navbar>
@@ -35,7 +36,7 @@
         <!--Left Nav Bar-->
         <div class="exercise-nav-container">
             <nav exercise-navbar>
-                <a data-level="easy">Beginner</a>
+                <a data-level="easy" onclick="etoSpeech()">Beginner</a>
                 <a data-level="mid">Intermediate</a>
                 <a data-level="hard">Advanced</a>
             </nav>
