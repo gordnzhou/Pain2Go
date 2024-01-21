@@ -1,11 +1,156 @@
+<!--main default-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoulders</title>
+    <title>Pain2Go</title>
+    <link rel="stylesheet" type="text/css" href="../../css/body-exercises.css">
+    <link rel="stylesheet" type="text/css" href="../../css/universal.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/841ed0000c.js" crossorigin="anonymous"></script>
+    <script src="../../js/show.js"></script>
 </head>
-<body>
-    <p>Shoulders</p>
-</body>
+    <body>
+        <navbar>
+            <ul class="desktop_navbar" id="navbar">
+                <li class="navbar_li"><a class="nav_text" href="../../index.html">
+                    <img class="navbar_logo" src="../../images/logo.png" alt="Pain2Go Logo" />
+                </a></li>
+    
+                <div class="navbar_li_mid">
+                    <li class="navbar_li"><a class="nav_text" href="../contact.html">
+                        CONTACT US <i class="fa-solid fa-envelope"></i>
+                    </a></li>
+                    <li class="navbar_li"><a class="nav_text" href="../exercises.html">
+                        EXERCISES <i class="fa-solid fa-dumbbell"></i>
+                    </a></li>
+                    <li class="navbar_li"><a class="nav_text" href="../about-us.html">
+                        ABOUT US <i class="fa-solid fa-user-group"></i>
+                    </a></li>
+                </div>
+            </ul>  
+        </navbar>
+
+        <!--Left Nav Bar-->
+        <div class="exercise-nav-container">
+            <nav exercise-navbar>
+                <a data-level="easy">Beginner</a>
+                <a data-level="mid">Intermediate</a>
+                <a data-level="hard">Advanced</a>
+            </nav>
+        </div>
+
+        <div class="main-container">
+            <div id="easyDiv" class="level-div active">
+                <!--Title-->
+                <div id="title">
+                    <h1>Shoulder Rolls (Beginner)</h1>
+                </div>
+    
+                <!--video links-->
+                <div id="video-container">
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/XbzY45Z5DE8?si=ekA6iRiINRPQv8Gk&amp;start=10" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+    
+                <!--instructions-->
+                <div class="instruction">
+                    <h2 class="instruction-header">INSTRUCTIONS</h2>
+                    <ul>
+                        <li>
+                            Position: Sit or stand with your arms relaxed at your sides.
+                        </li>
+                        <li>
+                            Movement: Roll your shoulders up, then back, down, and forward in a circular motion.
+                        <li>
+                            Repetitions: 10 times forward, then 10 times backward.
+                        </li>
+                    </ul>
+                </div>
+                <div id="exercise-button">
+                    <button id="../../js/timer" onclick="showTimer()">
+                        <img src="../../images/play-button.svg">
+                    </button>
+                </div>
+            </div>
+    
+            <div id="midDiv" class="level-div">
+                <!--Title-->
+                <div id="title">
+                    <h1>Neck Stretch with Hand Assistance (Intermediate)</h1>
+                </div>
+                <!--video links-->
+                <div id="video-container">
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/QN1oZVMMRjE?si=MH7uEiMPnnVWfB19&amp;start=10" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                </div>
+                <!--instructions-->
+                <div class="instruction">
+                    <h2 class="instruction-header">INSTRUCTIONS</h2>
+                    <ul>
+                        <li>
+                            Position: Sit or stand upright.                        </li>
+                        <li>
+                            Gently tilt your head to one side. Use your hand on the same side to apply gentle pressure for a deeper stretch.
+                        </li>                        
+                        <li>
+                            Hold: Hold for 15-30 seconds.
+                        </li>
+                        <li>
+                            Repetitions: Repeat on both sides.
+                        </li>
+                    </ul>
+                </div>
+                <div id="exercise-button">
+                    <button id="../../js/timer" onclick="showTimer()">
+                        <img src="../../images/play-button.svg">
+                    </button>
+                </div>
+            </div>
+    
+            <div id="hardDiv" class="level-div">
+                <!--Title-->
+                <div id="title">
+                    <h1>Banded Neck Flexion/Extension (Advanced)</h1>
+                </div>
+                <!--video links-->
+                <div id="video-container">
+                    <iframe width="1519" height="561" src="https://www.youtube.com/embed/ZgvzRn-16zI" 
+                    title="How to Do：ONE LEG BRIDGE" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                </div>
+                <!--instructions-->
+                <div class="instruction">
+                    <h2 class="instruction-header">INSTRUCTIONS</h2>
+                    <ol>
+                        <li>
+                            Equipment: Resistance band.
+                        </li>
+                        <li>
+                            Position: Sit upright. If flexing, attach the band to the back of your head; if extending, attach it to your forehead.
+                        <li>
+                            Movement: Flexion - gently move your chin toward your chest against the band's resistance. Extension - gently move your head back against the band.
+                        </li>
+                        <li>
+                            Repetitions: 10-15 reps for each.                        </li>
+                    </ol>
+                </div>
+                <div id="exercise-button">
+                    <button id="../../js/timer" onclick="showTimer()">
+                        <img src="../../images/play-button.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/body-exercises.js"></script>
+    </body>
 </html>
