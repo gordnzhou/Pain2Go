@@ -93,18 +93,28 @@
 }
 
 #grassL {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: -8px;
-    width: 55%;
-    height: 38%;
+    width: 52%;
+    height: 20%;
 }
 
 #grassR {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: -8px;
-    width: 55%;
-    height: 38%;
+    width: 52%;
+    height: 20%;
     transform: scaleX(-1);
+}
+
+section {
+    position: relative;
+    top: 660px;
+    height: 200px;
+    color: white;
+    font-size: 26px;
+    font-style: italic;
+    text-align: center;
 }
