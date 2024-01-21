@@ -28,6 +28,7 @@
                     <li class="navbar_li"><a class="nav_text" href="../about-us.html">
                         ABOUT US <i class="fa-solid fa-user-group"></i>
                     </a></li>
+                    <li class="navbar_li"><p id="score_display" class="nav_text">SCORE: </p></li>
                 </div>
             </ul>  
         </navbar>
@@ -172,10 +173,13 @@
                 </button>
             </div> -->
 
-            <button class="nextButton" onclick="tryNextLevel()">
-                Next Exercise!
-            </button>
+            <div id="nextButtonContainer">
+                <button class="nextButton" onclick="tryNextLevel()">
+                    Next Exercise!
+                </button>
+            </div>
         </div>
         <script src="../../js/body-exercises.js"></script>
+        <script src="../../js/universal.js"></script>
     </body>
 </html>
