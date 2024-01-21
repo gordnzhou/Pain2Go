@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pain2Go</title>
-    <link rel="stylesheet" type="text/css" href="../../css/universal.css">
     <link rel="stylesheet" type="text/css" href="../../css/body-exercises.css">
     <script src="show.js"></script>
 </head>
@@ -17,20 +16,14 @@
                             alt="Pain2Go Logo" /></a></li>
 
                 <div class="navbar_difficulty">
-                    <li class="navbar_li"><a class="nav_text" href="pages/exercises.html">
-                        Beginner <i class="fa-solid fa-dumbbell"></i>
-                    </a></li>
-                    <li class="navbar_li"><a class="nav_text" href="pages/about-us.html">
-                        Intermediate <i class="fa-solid fa-envelope"></i>
-                    </a></li>
-                    <li class="navbar_li"><a class="nav_text" href="html-hard.html">
-                        Advanced <i class="fa-solid fa-user-group"></i>
-                    </a></li>
+                    <li class="navbar_li" class="active" onClick="switchTab('hipEasy')"><p class="nav_text">Beginner</p></li>
+                    <li class="navbar_li" onClick="switchTab('hipMid')"><p class="nav_text">Intermediate</p></li>
+                    <li class="navbar_li" onClick="switchTab('hipHard')"><p class="nav_text">Advanced</p></li>
                 </div>
             </ul>  
         </navbar>
 
-        <div id="hipEasy">
+        <div id="hipEasy" class="active-content">
             <!--Title-->
             <div id="title">
                 <h3>Bridges (Beginner)</h3>
@@ -73,7 +66,7 @@
             </div>
         </div>
 
-        <div id="hipMid">
+        <div id="hipMid" class="content">
             <!--Title-->
             <div id="title">
                 <h3>Lunge Stretch (Intermediate)</h3>
@@ -116,7 +109,7 @@
             </div>
         </div>
 
-        <div id="hipHard">
+        <div id="hipHard" class="content">
             <!--Title-->
             <div id="title">
                 <h3>Single Leg Bridges (Advanced)</h3>

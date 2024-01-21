@@ -10,4 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         hiddenTimer.style.display = 'none';
       }
     });
+
+    const showDiv = document.getElementById('');s
 });
+
