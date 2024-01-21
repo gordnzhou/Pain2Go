@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Difficulty Levels with Nested Elements Example</title>
+  <link rel="stylesheet" href="neck.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+        <ul class="exercise_navbar">
+            <li class="navbar_li"><a class="nav_text" href="../../index.html"><img class="navbar_logo" src="images/logo.png"
+                alt="Pain2Go Logo" /></a></li>
+        </ul>
+      <a data-level="easy">Beginner</a>
+      <a data-level="mid">Intermediate</a>
+      <a data-level="hard">Advanced</a>
+    </nav>
+
+    <main>
+      <div id="easyDiv" class="level-div active">
+        <!--Title-->
+        <div id="title">
+            <h3>Shoulder Rolls</h3>
+            <div id="hidden-div" class="hidden">
+                <p id="countdown"></p>
+                <!-- <script src="timer.js"></script> -->
+                <script>
+                    // creating a function that returns the location of the next page 
+                    function nextPage() {
+                        return 'html-hard.html';
+                    }
+                </script>
+            </div>
+        </div>
+        <!--video links-->
+        <div id="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XbzY45Z5DE8?si=ekA6iRiINRPQv8Gk&amp;start=10" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </div>
+        <!--instructions-->
+        <div id="instruction">
+            <h4>--Instructions--</h4>
+            <ol>
+                <li>
+                    Roll your shoulders backward in a circular motion.
+                </li>
+                <li>
+                    Shoulder rolls are usually easy and help release tension in the shoulders.
+                </li>
+            </ol>
+        </div>
+        <div id="button">
+            <button id="timer" onclick="showTimer()">
+                <img src="../hip/play-button.svg">
+            </button>
+        </div>
+      </div>
+
+      <div id="midDiv" class="level-div">
+        <!--Title-->
+        <div id="title">
+            <h3>Lunge Stretch (Intermediate)</h3>
+            <div id="hidden-div" class="hidden">
+                <p id="countdown"></p>
+                <!--<script src="timer.js"></script> -->
+                <script>
+                    // creating a function that returns the location of the next page 
+                    function nextPage() {
+                        return 'html-hard.html';
+                    }
+                </script>
+            </div>
+        </div>
+        <!--video links-->
+        <div id="video-container">
+            <iframe width="550" height="250" src="https://www.youtube.com/embed/rHHzHSmjLng" title="lunge stretch" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <!--instructions-->
+        <div id="instruction">
+            <h4>--Instructions--</h4>
+            <ol>
+                <li>
+                    Begin in a standing position with your feet hip-width apart.
+                </li>
+                <li>
+                    Take a step forward with your right foot, making sure to maintain a comfortable and natural stride length.
+                <li>
+                    Lower your body by bending both knee.
+                </li>
+            </ol>
+        </div>
+        <div id="button">
+            <button id="timer" onclick="showTimer()">
+                <img src="../hip/play-button.svg">
+            </button>
+        </div>
+      </div>
+
+      <div id="hardDiv" class="level-div">
+        <!--Title-->
+        <div id="title">
+            <h3>Single Leg Bridges (Advanced)</h3>
+            <div id="hidden-div" class="hidden">
+                <p id="countdown"></p>
+                <!--<script src="timer.js"></script>-->
+                <script>
+                    // creating a function that returns the location of the next page 
+                    function nextPage() {
+                        return 'html-hard.html';
+                    }
+                </script>
+            </div>
+        </div>
+        <!--video links-->
+        <div id="video-container">
+            <iframe width="550" height="250" src="https://www.youtube.com/embed/rHHzHSmjLng" title="lunge stretch" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <!--instructions-->
+        <div id="instruction">
+            <h4>--Instructions--</h4>
+            <ol>
+                <li>
+                    Begin in a standing position with your feet hip-width apart.
+                </li>
+                <li>
+                    Take a step forward with your right foot, making sure to maintain a comfortable and natural stride length.
+                <li>
+                    Lower your body by bending both knee.
+                </li>
+            </ol>
+        </div>
+        <div id="button">
+            <button id="timer" onclick="showTimer()">
+                <img src="../hip/play-button.svg">
+            </button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('nav a')
+    .forEach(e => e.addEventListener('click', _ => changeLevel(e.dataset.level)));
+
+  function changeLevel(level) {
+    let divs = document.querySelectorAll('.level-div');
+    divs.forEach(div => div.classList.remove('active'));
+
+    let targetDiv = document.getElementById(`${level}Div`);
+    targetDiv.classList.add('active');
+  }
+});
+
+  </script>
+</body>
+</html>
+
