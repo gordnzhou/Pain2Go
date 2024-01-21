@@ -56,23 +56,45 @@ h3 {
     width: 100px;
 }
 
+
+/*easy*/
+
+#hipEasy {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+
 /*video layout*/
 
-#video-container {
-    align-self: center;
+#instructions {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers horizontally in the flex container */
+    align-items: center; /* Centers vertically in the flex container */
+    height: 100%; /* Set the height of the div to fill its parent container */
+    width: 100%;
 }
+
+
 
 /*instructions div*/
 
 div > h4 {
     padding-left: 50px;
     font-size: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 /*displaying button*/
 
-#button {
-    align-self: center;
+#button { 
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Set to the height of the parent container, or a fixed height if necessary */
 }
 
 #timer > img{
