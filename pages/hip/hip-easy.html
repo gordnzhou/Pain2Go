@@ -10,20 +10,17 @@
 </head>
     <body>
         <!--Top Nav Bar-->
-        <navbar>
+        <nav>
             <ul class="exercise_navbar">
-                <li class="navbar_li"><a class="nav_text" href="../../index.html"><img class="navbar_logo" src="images/logo.png"
+                <li class="navbar_li"><a class="nav_text" href="../../index.html"><img class="navbar_logo" src="../../images/logo.png"
                             alt="Pain2Go Logo" /></a></li>
+            </ul>
+            <a data-level="easy">Beginner</a>
+            <a data-level="mid">Intermediate</a>
+            <a data-level="hard">Advanced</a>
+        </nav>
 
-                <div class="navbar_difficulty">
-                    <li class="navbar_li" class="active"><p id="easy_tab">Beginner</p></li>
-                    <li class="navbar_li"><p class="mid_tab">Intermediate</p></li>
-                    <li class="navbar_li"><p class="hard_tab">Advanced</p></li>
-                </div>
-            </ul>  
-        </navbar>
-
-        <div id="hipEasy" class="active-content">
+        <div id="easyDiv" class="level-div active">
             <!--Title-->
             <div id="title">
                 <h3>Bridges (Beginner)</h3>
@@ -38,6 +35,7 @@
                     </script>
                 </div>
             </div>
+
             <!--video links-->
             <div id="video-container">
                 <iframe width="550" height="250" src="https://www.youtube.com/embed/rHHzHSmjLng" title="lunge stretch" frameborder="0" 
@@ -45,6 +43,7 @@
                     allowfullscreen>
                 </iframe>
             </div>
+
             <!--instructions-->
             <div id="instruction">
                 <h4>--Instructions--</h4>
@@ -66,7 +65,7 @@
             </div>
         </div>
 
-        <div id="hipMid" class="content">
+        <div id="midDiv" class="level-div">
             <!--Title-->
             <div id="title">
                 <h3>Lunge Stretch (Intermediate)</h3>
@@ -109,7 +108,7 @@
             </div>
         </div>
 
-        <div id="hipHard" class="content">
+        <div id="hardDiv" class="level-div">
             <!--Title-->
             <div id="title">
                 <h3>Single Leg Bridges (Advanced)</h3>
@@ -151,5 +150,19 @@
                 </button>
             </div>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('nav a')
+            .forEach(e => e.addEventListener('click', _ => changeLevel(e.dataset.level)));
+
+            function changeLevel(level) {
+            let divs = document.querySelectorAll('.level-div');
+            divs.forEach(div => div.classList.remove('active'));
+
+            let targetDiv = document.getElementById(`${level}Div`);
+            targetDiv.classList.add('active');
+            }
+            });
+        </script>
     </body>
 </html>
