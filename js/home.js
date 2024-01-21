@@ -1,12 +1,13 @@
-console.log("hello world!");
+var bodyPartIds = ["neck"];
 
-var neck = document.getElementById("neck");
-var neckButton = document.getElementById("neckButton");
-neck.style.opacity = 0;
+bodyPartIds.forEach((partId) => {
+    var bodyPart = document.getElementById(partId);
+    bodyPart.style.opacity = 0;
 
-neck.addEventListener("mouseover", function(){
-        neck.style.opacity = 1;
-});
-neck.addEventListener("mouseout", function(){
-        neck.style.opacity = 0;
+    bodyPart.addEventListener("mouseover", function(){
+            bodyPart.style.opacity = 1;
+    });
+    bodyPart.addEventListener("mouseout", function(){
+            bodyPart.style.opacity = 0;
+    });
 });

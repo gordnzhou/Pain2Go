@@ -1,11 +1,24 @@
-#humanBody {
-    width:200px; 
-    height:500px;
+.humanBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+}
+
+#humanBodyFront {
+    width: 200px;
+    height: 500px;
+}
+
+#humanBodyBack {
+    width: 200px;
+    height: 500px;
 }
 
 #neck {
-    position:absolute; 
-    top:60px; 
-    left:58px;
-    width:106px;
+    position: absolute;
+    top: 60px;
+    left: 58px;
+    width: 106px;
 }
