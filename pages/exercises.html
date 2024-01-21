@@ -36,20 +36,34 @@
         <p class="painQuestion"> Where do you feel pain?</p>
         <form class="pain-form">
             <!--hip choice-->
-            <input type="radio" id="hipChoice" name="exercise" value="hip"/>
-            <label for="hipChoice">Hips</label>
+            <div class="choice-div">
+                <input type="radio" id="hipChoice" name="exercise" value="hip"/>
+            <label class="labelExercise" for="hipChoice">Hips</label>
+            </div>
+            
             <!--knee choice-->
-            <input type="radio" id="kneeChoice" name="exercise" value="knee"/>
-            <label for="kneeChoice">Knee</label>
+            <div class="choice-div">
+                <input type="radio" id="kneeChoice" name="exercise" value="knee"/>
+                <label class="labelExercise" for="kneeChoice">Knee</label>
+            </div>
+            
             <!--lower-back choice-->
-            <input type="radio" id="lower-backChoice" name="exercise" value="lower-back"/>
-            <label for="lower-backChoice">Lower back</label>
+            <div class="choice-div">
+                <input type="radio" id="lower-backChoice" name="exercise" value="lower-back"/>
+                <label class="labelExercise" for="lower-backChoice">Lower back</label>
+            </div>
+            
             <!--neck choice-->
-            <input type="radio" id="neckChoice" name="exercise" value="neck"/>
-            <label for="neckChoice">Neck</label>
+            <div class="choice-div">
+                <input type="radio" id="neckChoice" name="exercise" value="neck"/>
+                <label class="labelExercise" for="neckChoice">Neck</label>
+            </div>
+            
             <!--shoulder choice-->
-            <input type="radio" id="shoulder" name="exercise" value="shoulder"/>
-            <label for="shoulderChoice">Shoulder</label>
+            <div class="choice-div">
+                <input type="radio" id="shoulder" name="exercise" value="shoulder"/>
+                <label class="labelExercise" for="shoulderChoice">Shoulder</label>
+            </div>
         </form>
 
         <button class="nextButton" onclick="getNext()">

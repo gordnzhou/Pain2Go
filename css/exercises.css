@@ -6,7 +6,16 @@
 
 .painQuestion {
     align-self: center;
+    font-size:20px;
     color: #b8dee3;
+}
+
+.choice-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 11em;
+    padding: 10px;
 }
 
 .pain-form {
@@ -15,6 +24,12 @@
     flex-direction: column;
     align-self: center;
     color: #b8dee3;
+}
+
+.labelExercise {
+    text-align: right;
+    clear: both;
+    font-size: larger;
 }
 
 .nextButton {
