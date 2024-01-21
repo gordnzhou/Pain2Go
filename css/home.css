@@ -1,3 +1,8 @@
+.main-header {
+    color: #F2F2F2;
+    font-style: italic;
+}
+
 .circle {
     position: absolute;
     width: 600px;
@@ -85,4 +90,21 @@
     top: 313px;
     left:306px;
     width: 96px;
+}
+
+#grassL {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 55%;
+    height: 38%;
+}
+
+#grassR {
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    width: 55%;
+    height: 38%;
+    transform: scaleX(-1);
 }

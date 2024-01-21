@@ -11,9 +11,15 @@
 
 .painQuestion {
     align-self: center;
-    color: #b8dee3;
+    color: #F2F2F2;
+    font-style: italic;
     font-family: Montserrat;
+    text-decoration: underline;
+    background-color: #000000;
+    border-radius: 12px;
+    padding: 12px;
 }
+
 
 .choice-div {
     display: flex;
@@ -29,6 +35,14 @@
     flex-direction: column;
     align-self: center;
     color: #b8dee3;
+    background-color: #000000;
+    border-radius: 25px;
+    padding: 12px;
+}
+
+input[type="radio"] {
+    width: 2.15em;
+    height: 2.15em;
 }
 
 .labelExercise {
