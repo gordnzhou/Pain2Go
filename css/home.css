@@ -5,7 +5,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #E9FCEB;
+    background-color: #F2F2F2;
     border-radius: 50%;
 }
 .humanBody {
@@ -31,7 +31,6 @@
 }
 
 #neckF {
-    opacity: 0;
     position: absolute;
     top: 50px;
     left: 96px;
@@ -39,7 +38,6 @@
 }
 
 #deltsF {
-    opacity: 1;
     position: absolute;
     top: 86px;
     left: 76px;
@@ -47,7 +45,6 @@
 }
 
 #hipF {
-    opacity: 1;
     position: absolute;
     top: 190px;
     left: 99px;
@@ -55,7 +52,6 @@
 }
 
 #kneesF {
-    opacity: 1;
     position: absolute;
     top: 302px;
     left: 104px;
@@ -63,7 +59,6 @@
 }
 
 #neckB {
-    opacity: 1;
     position: absolute;
     top: 52px;
     left: 270px;
@@ -71,7 +66,6 @@
 }
 
 #lowerBack {
-    opacity: 1;
     position: absolute;
     top: 143px;
     left: 296px;
@@ -79,7 +73,6 @@
 }
 
 #hipB {
-    opacity: 1;
     position: absolute;
     top: 200px;
     left: 291px;
@@ -87,7 +80,6 @@
 }
 
 #kneesB {
-    opacity: 1;
     position: absolute;
     top: 313px;
     left:306px;
