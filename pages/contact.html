@@ -6,16 +6,32 @@
     <title>About Us</title>
     <link rel="stylesheet" type="text/css" href="../css/about-us.css">
     <link rel="stylesheet" type="text/css" href="../css/universal.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/841ed0000c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <navbar>
         <ul class="desktop_navbar" id="navbar">
-            <li class="navbar_li"><a class="nav_text"><img class="navbar_logo" src="images/logo.png" alt="Pain2Go Logo"/></a></li>
-            <li class="navbar_li navbar_li_right"><a class="nav_text" href="pages/exercises.html">EXERCISES</a></li>
-            <li class="navbar_li navbar_li_right"><a class="nav_text" href="pages/about-us.html">CONTACT US</a></li>
-            <li class="navbar_li navbar_li_right"><a class="nav_text" href="pages/contact.html">ABOUT US</a></li>
+            <li class="navbar_li"><a class="nav_text" href="../index.html">
+                <img class="navbar_logo" src="../images/logo.png" alt="Pain2Go Logo" />
+            </a></li>
+
+            <div class="navbar_li_mid">
+                <li class="navbar_li"><a class="nav_text" href="exercises.html">
+                    EXERCISES <i class="fa-solid fa-dumbbell"></i>
+                </a></li>
+                <li class="navbar_li"><a class="nav_text current_nav_page" href="contact.html">
+                    CONTACT US <i class="fa-solid fa-envelope"></i>
+                </a></li>
+                <li class="navbar_li"><a class="nav_text" href="about-us.html">
+                    ABOUT US <i class="fa-solid fa-user-group"></i>
+                </a></li>
+            </div>
         </ul>  
     </navbar>
+
+    <h1 class="main-header">Contact Us!</h1>
+    
     <div class="team-bios">
         <div class="bio" id="bio1">
             <h3>Ivan</h3>
@@ -38,16 +54,5 @@
             <img src="images/Ivan.png" alt="Photo1">
         </div>
     </div>
-
-    
-    
-
-    
-
-
-
-
-
-    
 </body>
 </html>
