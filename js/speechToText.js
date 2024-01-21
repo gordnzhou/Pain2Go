@@ -1,9 +1,9 @@
+// to be developed
+
 const synth = window.speechSynthesis;
 
 const navSelect = document.querySelector("nav a");
 const voiceSelect = document.querySelector("select");
-
-const voices = synth.getVoices();
 
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('nav a').forEach(e => 
@@ -12,26 +12,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function toSpeech(level) {
+    let inputTxt;
     if (level='easy') {
-        const inputTxt = document.querySelector(`#easyDiv .instruction li`);
-        console.log
+        inputTxt = document.querySelectorAll(`#easyDiv .instruction li`);
+
     } else if (level = 'mid') {
-        const inputTxt = document.querySelector(`#midDiv .instruction li`);
+        inputTxt = document.querySelectorAll(`#midDiv .instruction li`);
     } else if (level = 'hard') {
-        const inputTxt = document.querySelector(`#hardDiv .instruction li`);
+        inputTxt = document.querySelectorAll(`#hardDiv .instruction li`);
     } else {
-        //
+        //do nothing    
+    }
+    
+
+    const utterThis = new SpeechSynthesisUtterance();
+    for (let i = 0; i < inputTxt.length; i++) {
+        utterThis.text += inputTxt[i].textContent + ' ';
     }
 
-    const inputTxt = document.querySelector(`#${level}Div #instruction li`);
-    console.log(inputTxt)
-    const utterThis = new SpeechSynthesisUtterance(inputTxt.value);
-    voiceSelect.selectedOptions[0].getAttribute("data-name");
-    for (let i = 0; i < voices.length; i++) {
-        if (voices[i].name === selectedOption) {
-            utterThis.voice = voices[i];
-        }
-    }
+    
+
     synth.speak(utterThis);
-    inputTxt.blur();
+    inputTxt[inputTxt.length - 1].blur();
 }
