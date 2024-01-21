@@ -1,0 +1,56 @@
+
+.desktop_navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background: #818DFC;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+}
+
+.navbar_li {
+    display: inline;
+    float: left;
+}
+
+.nav_text {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: inline;
+    margin: 0px 10px;
+    line-height: 50px;
+    padding-right: 35px;
+    transition: 0.3s;
+}
+
+.nav_text:hover {
+    color: #85B79D;
+}
+
+.current_nav_page {
+    color: #B9FFDB;
+}
+
+.navbar_logo {
+    float: right;
+    width: 50px;
+    height: auto;
+    top: 5px;
+    position: relative;
+    top: 12px;
+    margin-right: 10px;
+}
+
+.navbar_title {
+    left: 20px;
+    position: relative;
+}
+
+.navbar_li_right {
+    float: right;
+}
