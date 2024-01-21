@@ -95,12 +95,12 @@ h1 {
     width: 100%;
 }
 
-div > ol {
+div > ul {
     width: 100%;
     list-style-position: inside;
 }
 
-div > ol > li {
+div > ul > li {
     text-align: center;
 }
 
