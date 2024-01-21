@@ -56,28 +56,30 @@ h3 {
     width: 100px;
 }
 
-
-/*easy*/
-
-#hipEasy {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-}
-
-
 /*video layout*/
 
-#instructions {
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers horizontally in the flex container */
-    align-items: center; /* Centers vertically in the flex container */
-    height: 100%; /* Set the height of the div to fill its parent container */
-    width: 100%;
+#video-container {
+    display: flex;
+    justify-content: center;
 }
 
+#instructions {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    height: 100%; 
+    width: 100%; 
+}
 
+div > ol {
+    width: 100%; 
+    list-style-position: inside; 
+}
+
+div > ol > li {
+    text-align: center;
+}
 
 /*instructions div*/
 
@@ -91,10 +93,10 @@ div > h4 {
 /*displaying button*/
 
 #button { 
-    display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100%; /* Set to the height of the parent container, or a fixed height if necessary */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
 }
 
 #timer > img{
