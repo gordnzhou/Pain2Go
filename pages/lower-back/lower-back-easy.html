@@ -1,29 +1,159 @@
+<!--main default-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lower Back Exercises</title>
+    <title>Pain2Go</title>
+    <link rel="stylesheet" type="text/css" href="../../css/body-exercises.css">
+    <link rel="stylesheet" type="text/css" href="../../css/universal.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/841ed0000c.js" crossorigin="anonymous"></script>
+    <script src="../../js/show.js"></script>
 </head>
-<body>
-    <h1>Lower Back Mobility & Strength Exercises</h1>
+    <body>
+        <navbar>
+            <ul class="desktop_navbar" id="navbar">
+                <li class="navbar_li"><a class="nav_text" href="../../index.html">
+                    <img class="navbar_logo" src="../../images/logo.png" alt="Pain2Go Logo" />
+                </a></li>
+    
+                <div class="navbar_li_mid">
+                    <li class="navbar_li"><a class="nav_text" href="../contact.html">
+                        CONTACT US <i class="fa-solid fa-envelope"></i>
+                    </a></li>
+                    <li class="navbar_li"><a class="nav_text" href="../exercises.html">
+                        EXERCISES <i class="fa-solid fa-dumbbell"></i>
+                    </a></li>
+                    <li class="navbar_li"><a class="nav_text" href="../about-us.html">
+                        ABOUT US <i class="fa-solid fa-user-group"></i>
+                    </a></li>
+                </div>
+            </ul>  
+        </navbar>
 
-    <h2>Exercise 1: Cat-Camel Stretch</h2>
-    <p>
-        The cat-camel stretch helps improve flexibility and mobility in the lower back. Start on all fours with your hands directly under your shoulders and your knees under your hips. Arch your back up towards the ceiling like a cat, then lower your back down and lift your chest towards the ceiling like a camel. Repeat this movement for 10-15 repetitions.
-    </p>
+        <!--Left Nav Bar-->
+        <div class="exercise-nav-container">
+            <nav exercise-navbar>
+                <a data-level="easy">Beginner</a>
+                <a data-level="mid">Intermediate</a>
+                <a data-level="hard">Advanced</a>
+            </nav>
+        </div>
 
-    <h2>Exercise 2: Bird Dog</h2>
-    <p>
-        The bird dog exercise targets the muscles in your lower back and core. Begin on all fours with your hands directly under your shoulders and your knees under your hips. Extend your right arm forward while simultaneously extending your left leg backward. Hold this position for a few seconds, then switch sides. Repeat for 10-12 repetitions on each side.
-    </p>
-
-    <h2>Exercise 3: Superman</h2>
-    <p>
-        The superman exercise strengthens the muscles in your lower back and glutes. Lie face down on a mat with your arms extended in front of you. Lift your arms, chest, and legs off the ground simultaneously, keeping your neck in a neutral position. Hold this position for a few seconds, then lower back down. Repeat for 10-12 repetitions.
-    </p>
-
-    <!-- Add more exercises here -->
-
-</body>
+        <div class="main-container">
+            <div id="easyDiv" class="level-div active">
+                <!--Title-->
+                <div id="title">
+                    <h1>Cat Camel Stretch(Beginner)</h1>
+                </div>
+    
+                <!--video links-->
+                <div id="video-container">
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/XbzY45Z5DE8?si=ekA6iRiINRPQv8Gk&amp;start=10" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+    
+                <!--instructions-->
+                <div class="instruction">
+                    <h2 class="instruction-header">INSTRUCTIONS</h2>
+                    <ul>
+                        <li>
+                            Position: On all fours in a tabletop position.                        </li>
+                        <li>
+                            Movement: Arch your back up (cat), then dip it down (cow). 
+                       <li>
+                            Hold: 3-5 seconds in each position. 
+                        </li>
+                        <li>
+                            Repetitions: 10 cycles.
+                        </li>
+                    </ul>
+                </div>
+                <div id="exercise-button">
+                    <button id="../../js/timer" onclick="showTimer()">
+                        <img src="../../images/play-button.svg">
+                    </button>
+                </div>
+            </div>
+    
+            <div id="midDiv" class="level-div">
+                <!--Title-->
+                <div id="title">
+                    <h1>Bird Dog (Intermediate)</h1>
+                </div>
+                <!--video links-->
+                <div id="video-container">
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/B9ZncB1qdtQ?si=cAowmMaxsEmffggA&amp;start=10" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <!--instructions-->
+                <div class="instruction">
+                    <h2 class="instruction-header">INSTRUCTIONS</h2>
+                    <ul>
+                        <li>
+                            Position: On all fours in a tabletop position.                      </li>
+                        <li>
+                            Movement: Extend one arm and the opposite leg simultaneously, then switch.                        </li>                        
+                        <li>
+                            Hold: 2-3 seconds each side.
+                        </li>
+                        <li>
+                            Repetitions: 10 reps each side.
+                        </li>
+                    </ul>
+                </div>
+                <div id="exercise-button">
+                    <button id="../../js/timer" onclick="showTimer()">
+                        <img src="../../images/play-button.svg">
+                    </button>
+                </div>
+            </div>
+    
+            <div id="hardDiv" class="level-div">
+                <!--Title-->
+                <div id="title">
+                    <h1>Side Plank (Advanced)</h1>
+                </div>
+                <!--video links-->
+                <div id="video-container">
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/Oe9Tp9SvTCE?si=eK6Wy5HbDhCcogCA&amp;start=10" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <!--instructions-->
+                <div class="instruction">
+                    <h2 class="instruction-header">INSTRUCTIONS</h2>
+                    <ol>
+                        <li>
+                            Position: Lie on one side with legs straight, propped up on your elbow.
+                        </li>
+                        <li>
+                            Hold: 20-30 seconds.
+                        </li>
+                        <li>
+                            Repetitions: 2-3 times each side.
+                        </li>
+                    </ol>
+                </div>
+                <div id="exercise-button">
+                    <button id="../../js/timer" onclick="showTimer()">
+                        <img src="../../images/play-button.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/body-exercises.js"></script>
+    </body>
 </html>
